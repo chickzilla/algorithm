@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706160159 source:d:\code\study\algo\inversion\main.cpp
+	<iostream>
+	<vector>
+

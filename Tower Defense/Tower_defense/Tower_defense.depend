@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1705433277 source:d:\code\study\algo\tower defense\tower_defense\main.cpp
+	<iostream>
+	<vector>
+	<climits>
+

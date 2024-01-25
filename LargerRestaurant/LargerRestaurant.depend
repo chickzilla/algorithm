@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706180255 source:d:\code\study\algo\largerrestaurant\main.cpp
+	<iostream>
+	<vector>
+

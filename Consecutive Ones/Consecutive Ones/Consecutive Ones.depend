@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1705424498 source:d:\code\study\algo\consecutive ones\consecutive ones\main.cpp
+	<iostream>
+	<vector>
+

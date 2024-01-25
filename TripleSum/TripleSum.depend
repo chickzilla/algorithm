@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706010821 source:d:\code\study\algo\triplesum\main.cpp
+	<iostream>
+	<vector>
+

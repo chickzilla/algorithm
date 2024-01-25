@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706170248 source:d:\code\study\algo\mergecount\main.cpp
+	<iostream>
+	<algorithm>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1706007947 source:d:\code\study\algo\huguarray\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

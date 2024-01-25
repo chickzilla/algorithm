@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1705422946 source:d:\code\study\algo\gen barcode\gen barcode\main.cpp
+	<iostream>
+	<vector>
+
