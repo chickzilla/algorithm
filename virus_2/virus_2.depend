@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1706534184 source:d:\code\study\algo\algorithm\virus_2\main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+

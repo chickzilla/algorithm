@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1706530573 source:d:\code\study\algo\algorithm\a62_q1b_virus\main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+	<algorithm>
+
