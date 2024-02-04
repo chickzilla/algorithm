@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1706615304 source:d:\code\study\algo\algorithm\thanos\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<cmath>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706983846 source:d:\code\study\algo\algorithm\maximumcontiguoussumv2\main.cpp
+	<iostream>
+	<algorithm>
+
