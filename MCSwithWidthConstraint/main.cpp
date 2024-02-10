@@ -12,7 +12,13 @@ int solve(int arr[], int n, int w){
 
 
     for(int i = 0; i < n; i++){
-        max_cur = max_cur += arr[i];
+        max_cur = max_cur + arr[i];
+
+        // check exceed
+        if( i - s +1 > w){
+            max_cur -= arr[s];
+            s++;
+        }
         if(max_most < max_cur){
             max_most = max_cur;
             start = s;
@@ -27,7 +33,9 @@ int solve(int arr[], int n, int w){
 
 
 
-    cout << arr[start] << "\n" << arr[stop] << "\n" << stop - start + 1 << "\n";
+
+
+    //cout << arr[start] << "\n" << arr[stop] << "\n" << stop - start + 1 << "\n";
 
 
 

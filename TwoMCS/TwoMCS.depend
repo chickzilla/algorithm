@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1707122130 source:d:\code\study\algo\algorithm\twomcs\main.cpp
+	<iostream>
+	<algorithm>
+	<climits>
+
