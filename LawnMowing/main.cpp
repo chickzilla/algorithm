@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -21,6 +22,11 @@ int main()
             area[i] = area[i-1] + x;
             budget[j] = budget[j-1] + area[i] + k;
         }
+    }
+
+    for(long long i = 0; i < m; i++){
+        int pos = upper_bound(budget)
+
     }
 
     long long a,b;
