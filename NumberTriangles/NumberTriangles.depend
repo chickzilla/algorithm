@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1708237351 source:d:\code\study\algo\algorithm\numbertriangles\main.cpp
+	<iostream>
+	<algorithm>
+
