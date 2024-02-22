@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1708615525 source:d:\code\study\algo\algorithm\squaremap\main.cpp
+	<iostream>
+	<string>
+	<climits>
+	<algorithm>
+

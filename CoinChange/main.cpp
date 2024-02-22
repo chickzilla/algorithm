@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -13,10 +14,22 @@ int main()
         cin >> coin[i];
     }
 
-    for(int i = 1; i <= m ; i++){
-        for(int j = 0; j < n; j++){
-            dp[i][j] = min(dp[i], dp[i-j])
+    for(int i = 1;i <= m; i++){
+        dp[i] = 999999;
+        for(int j = 0; j <n; j++){
+            if(i - coin[j] >= 0){
+                dp[i] = min(dp[i], 1 + dp[i-coin[j]]);
+            }
+            /*if(i == 3 ){
+                cout << coin[j] << " " << dp[i] << " " << dp[i-j] <<"\n";
+            }*/
         }
     }
+
+
+    /*for(int i = 0; i <=m; i++){
+        cout << dp[i] << " ";
+    }*/
+    cout << dp[m];
     return 0;
 }
