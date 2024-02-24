@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1708759562 source:d:\code\study\algo\algorithm\longestcommonsubsequence\main.cpp
+	<iostream>
+	<string>
+	<algorithm>
+
