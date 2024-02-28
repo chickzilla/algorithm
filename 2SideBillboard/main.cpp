@@ -1,48 +1,44 @@
 #include <iostream>
 #include <algorithm>
-
 using namespace std;
 
+int n,w,k;
 int main()
 {
-    ios_base::sync_with_stdio(false); cin.tie(NULL);
-    int n,w,k;
+    ios_base::sync_with_stdio(false);  cin.tie(NULL);
     cin >> n >> w >> k;
-    int l[n+1];
-    int r[n+1];
-    l[0] = r[0] = 0;
+    int rs[n+1]; int ls[n+1];
+    rs[0] = 0; ls[0] = 0;
+    for(int i = 1; i<= n; i++) cin >> rs[i];
+    for(int i = 1; i<= n; i++) cin >> ls[i];
 
     for(int i = 1; i <= n; i++){
-        cin >> l[i];
-    }
-    for(int i = 1; i <= n; i++){
-        cin >> r[i];
-    }
 
-    int left= 0;
-    for(int i = 1; i <= n; i++){
-        // ซ้าย
-        int max_pre_left = 0;
-        for(int j = 1; j <= w; j++){
-            max_pre_left = max(max_pre_left, r[max(i-j, 0)]);
+        int max_r = 0;
+        int max_l = 0;
+
+        for(int j = max(0,i-2*w); j < i-w; j++){
+
+            // Logic ข้อนี้ => เลือกว่าจะเติมตัวนี้ต่อจากตัวไหน
+
+            max_r = max(max_r, ls[j]);
+            max_l = max(max_l, rs[j]);
+
         }
-        l[i] = max(max_pre_left, r[max(i-w-1, 0)] + l[i]);
 
-        // ขวา
-        int max_pre_rigth = 0;
-        for(int j = 1; j <= w; j++){
-            max_pre_rigth = max(max_pre_rigth, l[max(i-j, 0)]);
-        }
-        r[i] = max(max_pre_rigth, l[max(i-w-1, 0)] + r[i]);
-    }
-    for(int i = 0; i <= n; i++){
-        cout << l[i] << " ";
-    }
-    cout << "\n";
+        rs[i] = max_r + rs[i];
+        ls[i] = max_l + ls[i];
 
-      for(int i = 0; i <= n; i++){
-        cout << r[i] << " ";
     }
-    cout << "\n";
+    sort(rs, rs+n+1);
+    sort(ls, ls+n+1);
+
+    cout << max(rs[n], ls[n]);
+
+
+
+
+
+
     return 0;
 }

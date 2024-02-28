@@ -1,49 +1,42 @@
 #include <iostream>
-#include <vector>
+#include <algorithm>
 
 using namespace std;
 
-vector<int> cost,best;
+int dp[10001];
 
+// วิธีคิด --> เลือกว่าถ้าเอาตัวตำแหน้งที่ i มาคิดแล้วจะใส่หลังตัวไหนได้บ้าง
+// ex 5 1 | 1 99 1 99 1
+// dp --> 1 99 2 100 3
+// loop ตั้งแต่ ตัว ที่ i ถึง i -2k + 1
+// 2k+1 คือเทียบแล้วมันชัวๆว่สจะไม่มีช่องว่างนั้นเอง
+// ex ถ้า k = 1 แล้ว i = 5 มันก็เลือกได้ว่าจะต่อหลังจาก 4, 3, 2 ***
 int main() {
-    int n,k;
+    int n,k,x;
     cin >> n >> k;
-    cost.clear();cost.resize(n);
-    best.clear();best.resize(n);
-    for (int i = 0;i < n;i++) {
-      cin >> cost[i];
-    }
-    for (int i = 0;i <= std::min(n-1,k);i++) {
-      best[i] = cost[i];
-    }
 
-//    printf("initial\n");
-//    for (int i = 0;i < n;i++) {
-//      cout << best[i] << " ";
-//    }
-//    cout << endl;
-
-    int start = k+1;
-    int stop = n-1;
-    for (int i = start;i<=stop;i++) {
-        cout << i << " cost : " << cost[i] << "\n";
-      best[i] = cost[i]+best[i-1];
-      for (int j = 1;j <= 2*k+1;j++) {
-        if (i-j < 0) break;
-        if (cost[i] + best[i-j] < best[i]) best[i] = cost[i] + best[i-j];
-        cout << i << " " << j << " " << best[i] <<"\n" ;
-      }
-
-        cout << " cal " << i << "\n";
-        for (int i = 0;i < n;i++) {
-            cout << best[i] << " ";
+    for(int i = 1; i <= n; i++){
+        cin >> x;
+        if(i <= k+1){
+            // ex กรณี k =1; i = 3 มันควรเลือกได้ 2, 1, 0 แต่จริงๆ 0 มันไม่ได้เพราะมันไม่มี station
+            dp[i] = x;
+        } else {
+            // เราหา min ที่สุดของ i ว่าถ้าเลือก i แล้วควรต่อตัวไหน
+            dp[i] = dp[i-1] + x; // --> ตอนคิด min มันจะได้ != 0 ขะตั้ง dp[i] =9999999 ก็ได้
+            for(int j = 1; j <= (k*2)+1; j++){
+                // เราไม่เอากรณี ที่มัน == 0
+                if(i-j >= 1){
+                    dp[i] = min(dp[i-j]+ x, dp[i]);
+                }
+            }
         }
-        cout << endl;
-        }
+    }
 
-    int ans = best[n-1];
-    /*for (int i = n-1;i >= std::max(0,n-k-1);i--) {
-      if (best[i] < ans) ans = best[i];
-    }*/
-    cout << ans << endl;
+    int min_ans = dp[n];
+    // max(1,n-k) เพราะมีกรณี k > n
+    for(int i = n; i >= max(1,n-k) ; i--){
+        // เราหาต้องตั้งสถานีไหนที่มันยังตรง condition แล้วค่าน้อยสุด
+        min_ans = min(min_ans, dp[i]);
+    }
+    cout << min_ans;
 }
