@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1709287388 source:d:\code\study\algo\algorithm\archmatch\main.cpp
+	<iostream>
+	<algorithm>
+	<climits>
+
