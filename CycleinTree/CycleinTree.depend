@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1710741736 source:d:\code\study\algo\algorithm\cycleintree\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
