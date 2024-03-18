@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1710747795 source:d:\code\study\algo\algorithm\wildfire\main.cpp
+	<iostream>
+	<vector>
+

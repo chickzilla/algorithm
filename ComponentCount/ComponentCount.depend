@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1710743682 source:d:\code\study\algo\algorithm\componentcount\main.cpp
+	<iostream>
+	<vector>
+
