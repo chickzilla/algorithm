@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1711297578 source:d:\code\study\algo\algorithm\xorroad\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+

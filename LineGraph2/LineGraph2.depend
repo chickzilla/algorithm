@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1711798852 source:d:\code\study\algo\algorithm\linegraph2\main.cpp
+	<iostream>
+	<vector>
+

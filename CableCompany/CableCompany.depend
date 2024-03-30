@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1711275316 source:d:\code\study\algo\algorithm\cablecompany\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

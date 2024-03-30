@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1711194447 source:d:\code\study\algo\algorithm\perimeter\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+

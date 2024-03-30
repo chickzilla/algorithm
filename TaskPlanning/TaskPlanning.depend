@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1711302781 source:d:\code\study\algo\algorithm\taskplanning\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+

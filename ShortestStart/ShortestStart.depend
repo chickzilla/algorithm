@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1711622633 source:d:\code\study\algo\algorithm\shorteststart\main.cpp
+	<iostream>
+	<vector>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1711196510 source:d:\code\study\algo\algorithm\inthemiddle\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+

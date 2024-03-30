@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1711108764 source:d:\code\study\algo\algorithm\connection\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<climits>
+	<algorithm>
+

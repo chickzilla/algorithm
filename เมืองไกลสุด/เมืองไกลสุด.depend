@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1711626054 source:d:\code\study\algo\algorithm\เมืองไกลสุด\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<climits>
+

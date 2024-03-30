@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1711546214 source:d:\code\study\algo\algorithm\columbia\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<climits>
+	<algorithm>
+

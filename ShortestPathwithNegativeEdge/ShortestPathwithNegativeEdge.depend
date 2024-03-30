@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1711561275 source:d:\code\study\algo\algorithm\shortestpathwithnegativeedge\main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
